@@ -64,12 +64,10 @@ public class Seller implements Serializable{
 	public void setBaseSalary(Double baseSalary) {
 		this.baseSalary = baseSalary;
 	}
-
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -86,8 +84,4 @@ public class Seller implements Serializable{
 		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
 				+ baseSalary + ", department=" + department + "]";
 	}
-
-	
-	
-
 }
